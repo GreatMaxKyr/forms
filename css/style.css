@@ -18,6 +18,20 @@ textarea {
     box-sizing: border-box;
 }
 
+.graylabal {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.blacklabal {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
 input:focus,
 textarea:focus,
 select:focus,
