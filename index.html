@@ -3,11 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,17 +26,17 @@
                     <option value="">Львів</option>
                 </select>
             </label>
-            <label><textarea class="graylabal" rows="5" placeholder="Email"></textarea></label>
+            <label><textarea class="graylabal" rows="5" placeholder="Введіть текст повідомлення"></textarea></label>
             <label for=""><input class="reg w100" type="submit" value="Зареєструватися"></label>
         </form>
         <form action="php/sendmail.php" method="POST">
             <h2>02. елементи</h2>
             <div class="">
-                <input type="radio" name="delivery">
+                <input type="radio" class="cool-radio" id="delivery" name="delivery">
                 <label  class="blacklabal" for="delivery">Нова Пошта</label>
-                <input id="deliver" type="radio" name="delivery">
+                <input id="deliver" type="radio" class="cool-radio" name="delivery">
                 <label class="blacklabal" for="deliver">Кур’єр</label>
-                <input id="delive" type="radio" name="delivery">
+                <input id="delive" type="radio" class="cool-radio" name="delivery">
                 <label class="graylabal" for="delive">Самовивіз</label>
             </div>
             <div class="">
@@ -93,10 +90,10 @@
                 <label class="blacklabal" for="swit">Включити світло</label>
             </div>
         </form>
-        <form action="php/sendmail.php" method="POST">
+        <form class="tableform" action="php/sendmail.php" method="POST">
             <h2>04. форма таблицею</h2>
-            <h3>Заповніть усі необхідні поля</h3>
-            <table>
+            <h3 class="reason" >Заповніть усі необхідні поля</h3>
+            <table class="w100" >
                 <tr>
                     <td><label for="fio">ФІО:</label></td>
                     <td><input class="w100 graylabal" type="text" placeholder="Введіть ім’я" name="" id="fio"></td>
@@ -124,10 +121,10 @@
                 <tr>
                     <td><label for="man">Стать:</label></td>
                     <td>
-                        <input type="radio" name="gendr" id="man">
-                        <label for="man">Чоловік</label>
-                        <input type="radio" name="gendr" id="woman">
-                        <label for="woman">Жінка</label>
+                        <input type="radio" class="cool-radio" name="gendr" id="man">
+                        <label class="" for="man">Чоловік</label>
+                        <input type="radio" class="cool-radio" name="gendr" id="woman">
+                        <label class="" for="woman">Жінка</label>
                     </td>
                 </tr>
                 <tr>
@@ -152,7 +149,7 @@
         </form>
         <form action="php/sendmail.php" method="POST">
             <h2>05. форма таблицею</h2>
-            <h3>Оформлення заявки</h3>
+            <h3 class="reason" >Оформлення заявки</h3>
             <div class="application">
                 <table>
                     <tr>
