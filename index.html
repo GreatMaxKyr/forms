@@ -47,31 +47,33 @@
                 <input class="check" type="checkbox" id="delivery_conditi">
                 <label class="graylabal" for="delivery_conditi">Отримувати новини на ел. пошту</label>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Статус</th>
-                        <th>Дата</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <input class="check" type="checkbox" id="new">
-                            <label class="blacklabal" for="new">Новинки</label>
-                        </td>
-                        <td>
-                            <input class="check" type="checkbox" id="sale">
-                            <label class="blacklabal" for="sale">Акційні товари</label>
-                        </td>
-                        <td>
-                            <input class="check" type="checkbox" id="sellout">
-                            <label class="blacklabal" for="sellout">Розпродаж</label>
-                        </td>
-                        <td><label><input type="date"></label></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table_cargo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Статус</th>
+                            <th>Дата</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="check" type="checkbox" id="new">
+                                <label class="blacklabal" for="new">Новинки</label>
+                            </td>
+                            <td>
+                                <input class="check" type="checkbox" id="sale">
+                                <label class="blacklabal" for="sale">Акційні товари</label>
+                            </td>
+                            <td>
+                                <input class="check" type="checkbox" id="sellout">
+                                <label class="blacklabal" for="sellout">Розпродаж</label>
+                            </td>
+                            <td><label class=""><input class="" type="date"></label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </form>
         <form class="style" action="php/sendmail.php" method="POST">
             <h2>03. стилізовані чекбокси </h2>
@@ -121,10 +123,12 @@
                 <tr>
                     <td><label for="man">Стать:</label></td>
                     <td>
-                        <input type="radio" class="cool-radio" name="gendr" id="man">
-                        <label class="" for="man">Чоловік</label>
-                        <input type="radio" class="cool-radio" name="gendr" id="woman">
-                        <label class="" for="woman">Жінка</label>
+                        <div class="dr">
+                            <input type="radio" class="cool-radio" name="gendr" id="man">
+                            <label class="blacklabal gr" for="man">Чоловік</label>
+                            <input type="radio" class="cool-radio" name="gendr" id="woman">
+                            <label class="blacklabal gr" for="woman">Жінка</label>
+                        </div>
                     </td>
                 </tr>
                 <tr>

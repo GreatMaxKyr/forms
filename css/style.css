@@ -118,7 +118,7 @@ h2 {
 
 .cool-radio+label {
     position: relative;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 .cool-radio+label::before,
@@ -129,7 +129,7 @@ h2 {
 
 .cool-radio+label::before {
     left: 0;
-    top: -2px;
+    top: 1px;
     width: 14px;
     height: 14px;
     border: 1px solid #ccc;
@@ -144,7 +144,7 @@ h2 {
     width: 8px;
     height: 8px;
     left: 4px;
-    top: 2px;
+    top: 5px;
     border-radius: 50%;
     background-color: #3e6aff;
 }
@@ -211,6 +211,14 @@ textarea {
   outline: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.table_cargo {
+    max-width: 473px;
+    max-height: 114px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
 }
 
 .style {
@@ -344,6 +352,15 @@ textarea {
 
 .tableform {
     max-width: 500px;
+}
+
+.dr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gr {
+
 }
 
 .upload-file__label {
