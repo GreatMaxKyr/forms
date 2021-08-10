@@ -10,9 +10,9 @@ input,
 select,
 textarea {
     margin: 5px 0;
-    padding: 11px;   
+    padding: 11px;
     outline: none;
-    border: 1px solid #ccc;   
+    border: 1px solid #ccc;
     border-radius: 3px;
     outline: none;
     box-sizing: border-box;
@@ -36,7 +36,7 @@ input:focus,
 textarea:focus,
 select:focus,
 .cool-select select:focus {
-    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
     border: 1px solid #3e6aff;
 }
 
@@ -70,7 +70,7 @@ h2 {
     font-size: 18px;
     color: #1f222c;
     font-weight: 700;
-    font-family: "Roboto";    
+    font-family: "Roboto";
 }
 
 .check {
@@ -79,7 +79,7 @@ h2 {
 
 .check+label {
     position: relative;
-    padding-left: 35px;
+    padding-left: 25px;
 }
 
 .check+label::before,
@@ -90,7 +90,7 @@ h2 {
 
 .check+label::before {
     left: 0;
-    top: -2px;
+    top: 0;
     width: 15px;
     height: 15px;
     border: 1px solid #ccc;
@@ -103,7 +103,7 @@ h2 {
 
 .check:checked+label::after {
     left: 5px;
-    top: 0;
+    top: 1px;
     width: 5px;
     height: 8px;
     border: 2px solid #3e6aff;
@@ -125,6 +125,7 @@ h2 {
 .cool-radio+label::after {
     content: "";
     position: absolute;
+    transition: all 1s;
 }
 
 .cool-radio+label::before {
@@ -133,7 +134,7 @@ h2 {
     width: 14px;
     height: 14px;
     border: 1px solid #ccc;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 .cool-radio:checked+label::before {
@@ -171,46 +172,46 @@ textarea {
 }
 
 .reg:hover {
-    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
     background-color: #07be51;
     outline: none;
-} 
+}
 
-.cool-select option:first-child{
-  display: none;
+.cool-select option:first-child {
+    display: none;
 }
 
 .cool-select,
-.cool-select select{
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  background-color: transparent;
-  border-radius: 5px;
+.cool-select select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
 }
 
-.cool-select{
-  background-color: #fff;
+.cool-select {
+    background-color: #fff;
 }
 
-.cool-select:before{
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 20px;
-  border: 4px solid transparent;
-  border-bottom-color: #000;
-  border-right-color: #000;
-  transform: rotate(45deg);
-  z-index: 0;
+.cool-select:before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    border: 4px solid transparent;
+    border-bottom-color: #000;
+    border-right-color: #000;
+    transform: rotate(45deg);
+    z-index: 0;
 }
 
-.cool-select select{
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  outline: none;
-  -webkit-appearance: none;
-  appearance: none;
+.cool-select select {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .table_cargo {
@@ -221,19 +222,43 @@ textarea {
     border: 1px solid #e5e5e5;
 }
 
-.style {
-    display: flex;
-    
+.delivery_information {
+    max-width: 106px;
+    margin-right: 60px;
+    display: inline-block;
 }
 
-.gendr,
+.elements_check {
+    max-width: 250px;
+    display: inline-block;
+}
+
+.inb {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.c-td::-webkit-calendar-picker-indicator {
+    opacity: 0.3;
+}
+
+.style {}
+
+.gendr {
+    display: inline-block;
+    margin-right: 300px;
+    max-width: 150px;
+}
+
 .off {
-    flex: 0 0 50%;
+    display: inline-block;
+    max-width: 290px;
 }
 
 .gendr label,
 .off label {
-    display: block;
+    display: inline-block;
 
 }
 
@@ -258,7 +283,7 @@ textarea {
 .ma+label::before,
 .ma+label::after,
 .woma+label::before,
-.woma+label::after  {
+.woma+label::after {
     content: "";
     position: absolute;
     transition: all 1s ease;
@@ -327,12 +352,12 @@ textarea {
 
 .switch+label::after {
     left: 3px;
-    top: 11px;  
+    top: 11px;
     width: 21px;
     height: 21px;
     border-radius: 50%;
     background-color: #fff;
-    box-shadow: 0 0 2.5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.5);
 }
 
 .switch:checked+label::after {
@@ -342,7 +367,7 @@ textarea {
     width: 21px;
     height: 21px;
     border-radius: 11px;
-    box-shadow: 0 0 2.5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.5);
     background-color: #fff;
 }
 
@@ -354,13 +379,11 @@ textarea {
     max-width: 500px;
 }
 
-.dr {
+.gr {
+    margin-right: 20px;
+    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.gr {
-
 }
 
 .upload-file__label {
@@ -384,7 +407,7 @@ textarea {
 }
 
 .upload-file__label:hover {
-    box-shadow: 0px 2px 2.5px rgba(15,40,126,0.35);
+    box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
     background-color: #2857f4;
 }
 
@@ -396,7 +419,7 @@ textarea {
     font-family: "Roboto";
 }
 
-.back {  
+.back {
     font-size: 14px;
     color: #6e6f77;
     font-weight: 700;
@@ -421,12 +444,71 @@ textarea {
 
 .fix-form {
     max-width: 320px;
+    position: relative;
+}
+
+.fix-form h2,
+.fix-form div {
+    transition: all 1s;
+}
+
+.kross {
+    display: none;
+}
+
+.kross+label::after {
+    content: "+";
+    position: absolute;
+}
+
+.kross+label::after {
+    font-size: 20px;
+    left: 300px;
+    top: 45px;
+    color: #b3b3b3;;
+    transform: rotate(45deg);
+    z-index: +4;
+}
+
+.kross:checked~div,
+.kross:checked~h2 {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.kross:checked+label::after, 
+.kross:checked+label::before {
+    content: "";
+    position: absolute;
+}
+
+.kross:checked+label::after {
+    width: 10px;
+    height: 10px;
+    left: 300px;
+    top: 52px;
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+    border-right: none;
+    transform: rotate(0deg);
+}
+
+.kross:checked+label::before {
+    font-size: 20px;
+    width: 1px;
+    height: 1px;
+    left: 306px;
+    top: 50.5px;
+    border: 2px solid transparent;
+    border-bottom-color: #b3b3b3;
+    border-right-color: #b3b3b3;
+    transform: rotate(15deg);
 }
 
 .fixinputs {
-    padding: 45px 25px 20px 25px;
+    padding: 30px 25px 20px 25px;
     border-radius: 5px;
-    filter: drop-shadow(0px 5px 6px rgba(0,0,0,0.15));
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
 }
@@ -440,4 +522,9 @@ textarea {
 
 .fixinputs a:hover {
     text-decoration: underline;
-} 
+}
+
+.fixcheck {
+    display: inline-block;
+    margin-bottom: 15px;
+}
