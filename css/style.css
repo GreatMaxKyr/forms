@@ -3,7 +3,13 @@ body {
 }
 
 .wrapper {
-    margin: 100px;
+    margin: 80px auto;
+    width: 80%;
+    position: relative;
+}
+
+form {
+    margin: 50px 0;
 }
 
 input,
@@ -91,6 +97,7 @@ h2 {
 .check+label::before {
     left: 0;
     top: 0;
+    background-color: #fff;
     width: 15px;
     height: 15px;
     border: 1px solid #ccc;
@@ -164,6 +171,7 @@ textarea {
 }
 
 .reg {
+    cursor: pointer;
     border-radius: 3px;
     background-color: #12d661;
     font: 700 14px "Roboto";
@@ -187,7 +195,7 @@ textarea {
     display: inline-block;
     width: 100%;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .cool-select {
@@ -214,18 +222,44 @@ textarea {
     appearance: none;
 }
 
-.table_cargo {
-    max-width: 473px;
-    max-height: 114px;
-    border-radius: 3px;
-    background-color: #f7f7f7;
-    border: 1px solid #e5e5e5;
+hr {
+    height: 1px;
+    width: 100%;
+    border-color: transparent;
+    border-bottom-color: #e9e9e9;   
 }
 
 .delivery_information {
     max-width: 106px;
     margin-right: 60px;
     display: inline-block;
+}
+
+.table_cargo {
+    padding: 14px 5px;
+    float: right;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.table_cargo td:first-child {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.table_cargo td {
+    padding: 7px 16px;
+}
+
+.table_cargo label {
+    padding-right: 20px;
+}
+
+.table_cargo label:nth-child(3) {
+    padding-right: none;
 }
 
 .elements_check {
@@ -379,6 +413,11 @@ textarea {
     max-width: 500px;
 }
 
+.tableform td:first-child {
+    padding: 15px 0;
+    vertical-align: top;
+}
+
 .gr {
     margin-right: 20px;
     display: inline-block;
@@ -387,11 +426,11 @@ textarea {
 }
 
 .upload-file__label {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     max-width: 170px;
-    padding: 14px 40px;
+    padding: 14px 35px;
     border-radius: 3px;
     cursor: pointer;
     background-color: #3e6aff;
@@ -401,9 +440,13 @@ textarea {
     transition: .25s ease;
 }
 
-.upload-file__text {
+.upload-file__label {
+    font: 700 14px "Roboto";
     color: #fff;
-    font-family: "Roboto";
+}
+
+.upload-file__text {
+    display: none;
 }
 
 .upload-file__label:hover {
@@ -411,12 +454,111 @@ textarea {
     background-color: #2857f4;
 }
 
+.form_application {
+    max-width: 680px;
+}
+
+.application table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.application td {
+    padding-right: 10px;
+}
+
+.application tr td:last-child,
+.application table:nth-child(2) tr:first-child td:nth-child(2) {
+    padding: 0;
+}
 
 .application label {
+    width: 100%;
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 400;
     font-family: "Roboto";
+}
+
+.application input {
+    width: 100%;
+}
+
+.top-text {
+    display: inline-block;
+    position: relative;
+    padding: 15px 0;
+}
+
+.top-text span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-text.cool-select::before {
+    top: 32px;
+}
+
+.tr_line {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.tr_line::before {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #e9e9e9;    
+}
+
+.cool-select-2 {
+    position: relative;
+}
+
+.cool-select-2::after {
+    content: "";  
+    position: absolute;
+    top: 29px;
+    left: 180px;
+    width: 1px;
+    height: 19px;
+    background-color: #ccc; 
+    z-index: 2; 
+}
+
+.under-table-form {}
+
+.i-agree {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 55px
+}
+
+.i-agree::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #e9e9e9;
+}
+
+.yes-no {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 145px;
+}
+
+.back,
+.draw-up {
+    padding: 13px 25px;
 }
 
 .back {
@@ -436,15 +578,11 @@ textarea {
     background-color: #85868d;
 }
 
-.back,
-.draw-up {
-    padding: 13px 25px;
-
-}
-
 .fix-form {
     max-width: 320px;
-    position: relative;
+    position: sticky;
+    left: 70%;
+    bottom: 20px;
 }
 
 .fix-form h2,
@@ -464,10 +602,10 @@ textarea {
 .kross+label::after {
     font-size: 20px;
     left: 300px;
-    top: 45px;
-    color: #b3b3b3;;
+    top: 60px;
+    color: #b3b3b3;
     transform: rotate(45deg);
-    z-index: +4;
+    z-index: 4;
 }
 
 .kross:checked~div,
@@ -476,17 +614,23 @@ textarea {
     opacity: 0;
 }
 
-.kross:checked+label::after, 
+.kross:checked+label::after,
 .kross:checked+label::before {
     content: "";
     position: absolute;
+}
+
+.kross+label:hover::after,
+.kross+label:hover::before {
+    color: #3e6aff;
+    cursor: pointer;
 }
 
 .kross:checked+label::after {
     width: 10px;
     height: 10px;
     left: 300px;
-    top: 52px;
+    top: 67px;
     border: 1px solid #b3b3b3;
     border-radius: 50%;
     border-right: none;
@@ -498,7 +642,7 @@ textarea {
     width: 1px;
     height: 1px;
     left: 306px;
-    top: 50.5px;
+    top: 65.5px;
     border: 2px solid transparent;
     border-bottom-color: #b3b3b3;
     border-right-color: #b3b3b3;
